@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.ThinkThank" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="Theme.ThinkThank.LoadingScreen" parent="Base.Theme.ThinkThank">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_raiffeisen</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.ThinkThank</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:fontFamily">@font/metropolis_bold</item>
+        <item name="android:textColor">@color/black_olive</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="YellowButton" parent="ThemeOverlay.AppCompat">
+        <item name="android:background">@drawable/rectangle_1</item>
+        <item name="android:fontFamily">@font/metropolis_bold</item>
+        <item name="android:textColor">@color/vanilla</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="Normal">
+        <item name="android:fontFamily">@font/metropolis_light</item>
+        <item name="android:textColor">@color/black_olive</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EditText" parent="ThemeOverlay.AppCompat">
+        <item name="android:background">@drawable/rectangle_tv</item>
+        <item name="android:fontFamily">@font/metropolis_light</item>
+        <item name="android:textColor">@color/black_olive</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="maxLines">1</item>
+        <item name="android:ems">10</item>
+    </style>
+</resources>

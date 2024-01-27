@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "514755874192",
+    "project_id": "thinkthank-3b885",
+    "storage_bucket": "thinkthank-3b885.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514755874192:android:8073b313ad843128317715",
+        "android_client_info": {
+          "package_name": "com.ubb.raiffaisen.thinktank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgQmMzzN8M5lpDKCj6F9AapoRE5xd4EI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

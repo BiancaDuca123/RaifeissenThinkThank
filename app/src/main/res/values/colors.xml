@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="spotify_green">#57B65F</color>
+    <color name="darkest_grey">#121212</color>
+    <color name="beige">#E3E7D3</color>
+    <color name="black_olive">#25291C</color>
+    <color name="vanilla">#E6E49F</color>
+    <color name="dark_grey">#282828</color>
+    <color name="grey">#B3B3B3</color>
+</resources>

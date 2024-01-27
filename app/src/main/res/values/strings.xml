@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Raiffeisen ThinkThank</string>
+    <string name="register">Don\'t have an account? <b>SIGNUP</b></string>
+    <string name="reset">RESET PASSWORD</string>
+</resources>
