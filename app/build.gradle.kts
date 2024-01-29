@@ -57,7 +57,7 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:32.7.1"))
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("com.google.firebase:firebase-analytics")
-//    implementation("implementation 'com.google.android.gms:play-services-auth")
+    implementation("com.google.firebase:firebase-database-ktx")
 
     // Hilt Implementation
     implementation("com.google.devtools.ksp:symbol-processing-api:1.9.21-1.0.15")

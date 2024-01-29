@@ -19,4 +19,6 @@ class LoginViewModel @Inject constructor(
 
     fun loginWithEmailAndPassword(email: String, password: String) =
         commonRepository.loginWithEmailAndPassword(email, password, loginResultCallback)
+
+    fun getCurrentUser() = commonRepository.getCurrentUser()
 }

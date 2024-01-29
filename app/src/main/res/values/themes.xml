@@ -23,6 +23,20 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="YellowButton.NoCaps" parent="ThemeOverlay.AppCompat">
+        <item name="android:background">@drawable/rectangle_1</item>
+        <item name="android:fontFamily">@font/metropolis_bold</item>
+        <item name="android:textColor">@color/vanilla</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="subtitle">
+        <item name="android:fontFamily">@font/metropolis_bold</item>
+        <item name="android:textColor">@color/black_olive</item>
+        <item name="android:textSize">18sp</item>
+    </style>
 
     <style name="Normal">
         <item name="android:fontFamily">@font/metropolis_light</item>
