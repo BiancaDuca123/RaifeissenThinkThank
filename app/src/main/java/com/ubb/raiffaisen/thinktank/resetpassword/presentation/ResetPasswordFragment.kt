@@ -1,3 +1,4 @@
+/* (C)2024 - UBB RAIFFEISEN THINK THANK */
 package com.ubb.raiffaisen.thinktank.resetpassword.presentation
 
 import android.os.Bundle
@@ -16,20 +17,23 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class ResetPasswordFragment : Fragment(), ResetPasswordResultCallback {
-
     private lateinit var binding: FragmentResetPasswordBinding
 
     private val viewModel: ResetPasswordViewModel by viewModels()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
     ): View {
         binding = FragmentResetPasswordBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel.setResetPasswordCallBack(this)
@@ -45,16 +49,16 @@ class ResetPasswordFragment : Fragment(), ResetPasswordResultCallback {
         Toast.makeText(context, RESET_PASSWORD_ERROR_MESSAGE, Toast.LENGTH_SHORT).show()
     }
 
-    private fun setupUI() = with(binding) {
-        backButton.setOnClickListener {
-            findNavController().popBackStack()
-        }
-        resetPasswordButton.setOnClickListener {
-            val email = inputEmail.text.toString()
-            if (email.isNotEmpty()) {
-                viewModel.resetPassword(email)
+    private fun setupUI() =
+        with(binding) {
+            backButton.setOnClickListener {
+                findNavController().popBackStack()
             }
-
+            resetPasswordButton.setOnClickListener {
+                val email = inputEmail.text.toString()
+                if (email.isNotEmpty()) {
+                    viewModel.resetPassword(email)
+                }
+            }
         }
-    }
 }

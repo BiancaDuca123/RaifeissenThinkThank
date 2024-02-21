@@ -5,11 +5,4 @@ plugins {
     id("com.google.dagger.hilt.android") version "2.48" apply false
     id("com.google.gms.google-services") version "4.4.0" apply false
     id("com.google.devtools.ksp") version "1.9.21-1.0.15"
-
-}
-
-buildscript {
-    dependencies {
-        classpath("com.google.dagger:hilt-android-gradle-plugin:2.48")
-    }
 }

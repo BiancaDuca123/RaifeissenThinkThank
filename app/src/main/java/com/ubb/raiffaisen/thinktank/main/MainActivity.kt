@@ -1,3 +1,4 @@
+/* (C)2024 - UBB RAIFFEISEN THINK THANK */
 package com.ubb.raiffaisen.thinktank.main
 
 import android.os.Bundle
@@ -13,7 +14,6 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
-
     private var navController: NavController? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {

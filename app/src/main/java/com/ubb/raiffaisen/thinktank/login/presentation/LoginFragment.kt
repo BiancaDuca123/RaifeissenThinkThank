@@ -1,3 +1,4 @@
+/* (C)2024 - UBB RAIFFEISEN THINK THANK */
 package com.ubb.raiffaisen.thinktank.login.presentation
 
 import android.os.Bundle
@@ -16,7 +17,6 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class LoginFragment : Fragment(), LoginResultCallback {
-
     private lateinit var binding: FragmentLoginBinding
 
     private val viewModel: LoginViewModel by viewModels()
@@ -27,14 +27,18 @@ class LoginFragment : Fragment(), LoginResultCallback {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
     ): View {
         binding = FragmentLoginBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel.setLoginResultCallback(this)
@@ -51,25 +55,28 @@ class LoginFragment : Fragment(), LoginResultCallback {
         Toast.makeText(context, LOGIN_ERROR_MESSAGE, Toast.LENGTH_SHORT).show()
     }
 
-    private fun setupUI() = with(binding) {
-        registerAccount.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+    private fun setupUI() =
+        with(binding) {
+            registerAccount.setOnClickListener {
+                findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+            }
+            loginButton.setOnClickListener {
+                loginUser()
+            }
+            resetPassword.setOnClickListener {
+                findNavController().navigate(R.id.action_loginFragment_to_resetPasswordFragment)
+            }
         }
-        loginButton.setOnClickListener {
-            loginUser()
-        }
-        resetPassword.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_resetPasswordFragment)
-        }
-    }
 
-    private fun loginUser() = with(binding) {
-        viewModel.loginWithEmailAndPassword(email.text.toString(), password.text.toString())
-    }
+    private fun loginUser() =
+        with(binding) {
+            viewModel.loginWithEmailAndPassword(email.text.toString(), password.text.toString())
+        }
 
-    private fun checkIfUserIsLogged() = if (viewModel.getCurrentUser() != null) {
-        findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
-    } else {
-        /* NO-OP */
-    }
+    private fun checkIfUserIsLogged() =
+        if (viewModel.getCurrentUser() != null) {
+            findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
+        } else {
+            // NO-OP
+        }
 }
