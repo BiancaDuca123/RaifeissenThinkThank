@@ -1,3 +1,4 @@
+/* (C)2024 - UBB RAIFFEISEN THINK THANK */
 package com.ubb.raiffaisen.thinktank.register.presentation
 
 import android.os.Bundle
@@ -20,14 +21,20 @@ class RegisterFragment : Fragment(), RegisterResultCallback {
     private lateinit var binding: FragmentRegisterBinding
 
     private val viewModel: RegisterViewModel by viewModels()
+
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
     ): View {
         binding = FragmentRegisterBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel.setRegisterResultCallback(this)
@@ -58,7 +65,10 @@ class RegisterFragment : Fragment(), RegisterResultCallback {
     }
 
     private fun registerWithEmailAndPassword(
-        email: String, password: String, gender: String, name: String
+        email: String,
+        password: String,
+        gender: String,
+        name: String
     ) {
         viewModel.registerWithEmailAndPassword(email, password, gender, name)
     }

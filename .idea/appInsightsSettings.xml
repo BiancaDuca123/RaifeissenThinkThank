@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.ubb.raiffaisen.thinktank" />
+                  <option name="mobileSdkAppId" value="1:514755874192:android:8073b313ad843128317715" />
+                  <option name="projectId" value="thinkthank-3b885" />
+                  <option name="projectNumber" value="514755874192" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
