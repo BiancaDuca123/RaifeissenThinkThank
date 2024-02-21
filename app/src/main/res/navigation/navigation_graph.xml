@@ -33,4 +33,9 @@
         android:id="@+id/resetPasswordFragment"
         android:name="com.ubb.raiffaisen.thinktank.resetpassword.presentation.ResetPasswordFragment"
         android:label="ResetPasswordFragment" />
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.ubb.raiffaisen.thinktank.test.presentation.TestFragment"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" />
 </navigation>

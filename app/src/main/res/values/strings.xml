@@ -14,4 +14,12 @@
     <string name="login_to_continue">Login to continue.</string>
     <string name="reset_your_password">Reset your password.</string>
     <string name="reset_password">Reset Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sold">Sold</string>
+    <string name="_100lei">100lei</string>
+    <string name="adauga_o_categorie">Adauga o categorie</string>
+    <string name="nume">Nume</string>
+    <string name="buget">Buget</string>
+    <string name="adauga">Adauga</string>
 </resources>
